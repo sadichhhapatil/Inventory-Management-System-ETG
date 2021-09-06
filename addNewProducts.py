@@ -29,11 +29,10 @@ def addNewProductsToInventory(record):
             record[prod_id] = {"product_name" : prod_na, "price" : prod_pr, "colour" : prod_cl, "warrenty" : prod_wr, "material" : prod_mt, "quantity": prod_quant}
         ans = str(input("Do you want to add more products then type 'yes' else type 'no' : "))
         if ans == 'yes':
-            return True
+            continue
         elif ans =='no':
             return False
-        else:
-            return False
+        
 
 addNewProductsToInventory(record)
 
